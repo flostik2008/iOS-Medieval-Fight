@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87EFDE681D6505DB00749050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDE671D6505DB00749050 /* AppDelegate.swift */; };
+		87EFDE6A1D6505DB00749050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDE691D6505DB00749050 /* ViewController.swift */; };
+		87EFDE6D1D6505DB00749050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDE6B1D6505DB00749050 /* Main.storyboard */; };
+		87EFDE6F1D6505DB00749050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDE6E1D6505DB00749050 /* Assets.xcassets */; };
+		87EFDE721D6505DB00749050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDE701D6505DB00749050 /* LaunchScreen.storyboard */; };
+		87EFDE7D1D6505DB00749050 /* Tekken5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDE7C1D6505DB00749050 /* Tekken5Tests.swift */; };
+		87EFDE881D6505DB00749050 /* Tekken5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDE871D6505DB00749050 /* Tekken5UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87EFDE791D6505DB00749050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87EFDE5C1D6505DB00749050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87EFDE631D6505DB00749050;
+			remoteInfo = Tekken5;
+		};
+		87EFDE841D6505DB00749050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87EFDE5C1D6505DB00749050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87EFDE631D6505DB00749050;
+			remoteInfo = Tekken5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87EFDE641D6505DB00749050 /* Tekken5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekken5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EFDE671D6505DB00749050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87EFDE691D6505DB00749050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87EFDE6C1D6505DB00749050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87EFDE6E1D6505DB00749050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87EFDE711D6505DB00749050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87EFDE731D6505DB00749050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EFDE781D6505DB00749050 /* Tekken5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tekken5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EFDE7C1D6505DB00749050 /* Tekken5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekken5Tests.swift; sourceTree = "<group>"; };
+		87EFDE7E1D6505DB00749050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EFDE831D6505DB00749050 /* Tekken5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tekken5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EFDE871D6505DB00749050 /* Tekken5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekken5UITests.swift; sourceTree = "<group>"; };
+		87EFDE891D6505DB00749050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87EFDE611D6505DB00749050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE751D6505DB00749050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE801D6505DB00749050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87EFDE5B1D6505DB00749050 = {
+			isa = PBXGroup;
+			children = (
+				87EFDE661D6505DB00749050 /* Tekken5 */,
+				87EFDE7B1D6505DB00749050 /* Tekken5Tests */,
+				87EFDE861D6505DB00749050 /* Tekken5UITests */,
+				87EFDE651D6505DB00749050 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87EFDE651D6505DB00749050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87EFDE641D6505DB00749050 /* Tekken5.app */,
+				87EFDE781D6505DB00749050 /* Tekken5Tests.xctest */,
+				87EFDE831D6505DB00749050 /* Tekken5UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87EFDE661D6505DB00749050 /* Tekken5 */ = {
+			isa = PBXGroup;
+			children = (
+				87EFDE671D6505DB00749050 /* AppDelegate.swift */,
+				87EFDE691D6505DB00749050 /* ViewController.swift */,
+				87EFDE6B1D6505DB00749050 /* Main.storyboard */,
+				87EFDE6E1D6505DB00749050 /* Assets.xcassets */,
+				87EFDE701D6505DB00749050 /* LaunchScreen.storyboard */,
+				87EFDE731D6505DB00749050 /* Info.plist */,
+			);
+			path = Tekken5;
+			sourceTree = "<group>";
+		};
+		87EFDE7B1D6505DB00749050 /* Tekken5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				87EFDE7C1D6505DB00749050 /* Tekken5Tests.swift */,
+				87EFDE7E1D6505DB00749050 /* Info.plist */,
+			);
+			path = Tekken5Tests;
+			sourceTree = "<group>";
+		};
+		87EFDE861D6505DB00749050 /* Tekken5UITests */ = {
+			isa = PBXGroup;
+			children = (
+				87EFDE871D6505DB00749050 /* Tekken5UITests.swift */,
+				87EFDE891D6505DB00749050 /* Info.plist */,
+			);
+			path = Tekken5UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87EFDE631D6505DB00749050 /* Tekken5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EFDE8C1D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5" */;
+			buildPhases = (
+				87EFDE601D6505DB00749050 /* Sources */,
+				87EFDE611D6505DB00749050 /* Frameworks */,
+				87EFDE621D6505DB00749050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tekken5;
+			productName = Tekken5;
+			productReference = 87EFDE641D6505DB00749050 /* Tekken5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87EFDE771D6505DB00749050 /* Tekken5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EFDE8F1D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5Tests" */;
+			buildPhases = (
+				87EFDE741D6505DB00749050 /* Sources */,
+				87EFDE751D6505DB00749050 /* Frameworks */,
+				87EFDE761D6505DB00749050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87EFDE7A1D6505DB00749050 /* PBXTargetDependency */,
+			);
+			name = Tekken5Tests;
+			productName = Tekken5Tests;
+			productReference = 87EFDE781D6505DB00749050 /* Tekken5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87EFDE821D6505DB00749050 /* Tekken5UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EFDE921D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5UITests" */;
+			buildPhases = (
+				87EFDE7F1D6505DB00749050 /* Sources */,
+				87EFDE801D6505DB00749050 /* Frameworks */,
+				87EFDE811D6505DB00749050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87EFDE851D6505DB00749050 /* PBXTargetDependency */,
+			);
+			name = Tekken5UITests;
+			productName = Tekken5UITests;
+			productReference = 87EFDE831D6505DB00749050 /* Tekken5UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87EFDE5C1D6505DB00749050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Evgeny Vlasov";
+				TargetAttributes = {
+					87EFDE631D6505DB00749050 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					87EFDE771D6505DB00749050 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 87EFDE631D6505DB00749050;
+					};
+					87EFDE821D6505DB00749050 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 87EFDE631D6505DB00749050;
+					};
+				};
+			};
+			buildConfigurationList = 87EFDE5F1D6505DB00749050 /* Build configuration list for PBXProject "Tekken5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87EFDE5B1D6505DB00749050;
+			productRefGroup = 87EFDE651D6505DB00749050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87EFDE631D6505DB00749050 /* Tekken5 */,
+				87EFDE771D6505DB00749050 /* Tekken5Tests */,
+				87EFDE821D6505DB00749050 /* Tekken5UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87EFDE621D6505DB00749050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EFDE721D6505DB00749050 /* LaunchScreen.storyboard in Resources */,
+				87EFDE6F1D6505DB00749050 /* Assets.xcassets in Resources */,
+				87EFDE6D1D6505DB00749050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE761D6505DB00749050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE811D6505DB00749050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87EFDE601D6505DB00749050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EFDE6A1D6505DB00749050 /* ViewController.swift in Sources */,
+				87EFDE681D6505DB00749050 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE741D6505DB00749050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EFDE7D1D6505DB00749050 /* Tekken5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EFDE7F1D6505DB00749050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EFDE881D6505DB00749050 /* Tekken5UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87EFDE7A1D6505DB00749050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87EFDE631D6505DB00749050 /* Tekken5 */;
+			targetProxy = 87EFDE791D6505DB00749050 /* PBXContainerItemProxy */;
+		};
+		87EFDE851D6505DB00749050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87EFDE631D6505DB00749050 /* Tekken5 */;
+			targetProxy = 87EFDE841D6505DB00749050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87EFDE6B1D6505DB00749050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87EFDE6C1D6505DB00749050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87EFDE701D6505DB00749050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87EFDE711D6505DB00749050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87EFDE8A1D6505DB00749050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87EFDE8B1D6505DB00749050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87EFDE8D1D6505DB00749050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tekken5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87EFDE8E1D6505DB00749050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tekken5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87EFDE901D6505DB00749050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tekken5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekken5.app/Tekken5";
+			};
+			name = Debug;
+		};
+		87EFDE911D6505DB00749050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tekken5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekken5.app/Tekken5";
+			};
+			name = Release;
+		};
+		87EFDE931D6505DB00749050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tekken5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tekken5;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		87EFDE941D6505DB00749050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tekken5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.Tekken5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tekken5;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87EFDE5F1D6505DB00749050 /* Build configuration list for PBXProject "Tekken5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EFDE8A1D6505DB00749050 /* Debug */,
+				87EFDE8B1D6505DB00749050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87EFDE8C1D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EFDE8D1D6505DB00749050 /* Debug */,
+				87EFDE8E1D6505DB00749050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		87EFDE8F1D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EFDE901D6505DB00749050 /* Debug */,
+				87EFDE911D6505DB00749050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		87EFDE921D6505DB00749050 /* Build configuration list for PBXNativeTarget "Tekken5UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EFDE931D6505DB00749050 /* Debug */,
+				87EFDE941D6505DB00749050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87EFDE5C1D6505DB00749050 /* Project object */;
+}
