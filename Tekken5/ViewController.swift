@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             Character2Img.hidden = true
             
         // This will disable attack buttons for 3 sec until new game.
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
+//            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
     }
     
     
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
             HPLbl1.text = "Dead"
             Character1Img.hidden = true
             // This will disable attack buttons for 3 sec until new game.
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
+//            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
         }
         
         
