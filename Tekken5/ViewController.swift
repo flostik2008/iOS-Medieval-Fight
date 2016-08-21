@@ -89,6 +89,8 @@ class ViewController: UIViewController {
 
         if rightCharacter.attackHappened(leftCharacter.attackPower) {
             MainLbl.text = "\(leftCharacter.name) is attacking \(rightCharacter.name)!"
+            AttackBtn2.enabled = false
+            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "enable2Button", userInfo: nil, repeats: false)
         }
       
         print("\(leftCharacter.name) hp:ap \(leftCharacter.hp) \(leftCharacter.attackPower), \(rightCharacter.name) hp:ap \(rightCharacter.hp) \(rightCharacter.attackPower)")
@@ -100,9 +102,6 @@ class ViewController: UIViewController {
     } else if rightCharacter.hp <= 0 {
     HPLbl2.text = "Dead"
             Character2Img.hidden = true
-            
-        // This will disable attack buttons for 3 sec until new game.
-//            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
     }
     
     
@@ -119,6 +118,8 @@ class ViewController: UIViewController {
     
         if leftCharacter.attackHappened(rightCharacter.attackPower) {
             MainLbl.text = "\(rightCharacter.name) is attacking \(leftCharacter.name)!"
+            AttackBtn1.enabled = false
+            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "enable1Button", userInfo: nil, repeats: false)
         }
         
         print("\(leftCharacter.name) hp:ap \(leftCharacter.hp) \(leftCharacter.attackPower), \(rightCharacter.name) hp:ap \(rightCharacter.hp) \(rightCharacter.attackPower)")
@@ -128,8 +129,7 @@ class ViewController: UIViewController {
         } else if leftCharacter.hp <= 0 {
             HPLbl1.text = "Dead"
             Character1Img.hidden = true
-            // This will disable attack buttons for 3 sec until new game.
-//            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "generateBothCharacters", userInfo: nil, repeats: false)
+            
         }
         
         
@@ -138,7 +138,17 @@ class ViewController: UIViewController {
             MainLbl.text = "\(leftCharacter.name) died. \(rightCharacter.name) won."
         }
     }
+    
+    func enable2Button () {
+        AttackBtn2.enabled = true
+    }
+    
+    func enable1Button () {
+        AttackBtn1.enabled = true
+    }
 }
+
+
 
 
 
