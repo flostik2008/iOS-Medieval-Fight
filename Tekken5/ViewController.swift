@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -149,13 +150,9 @@ class ViewController: UIViewController {
         // hide gameOver lbl and restartBtn + unhide character img.
         GameOverLbl.hidden = true
         RestartBtnLbl.hidden = true
+        Character2Img.hidden = false
+        Character1Img.hidden = false
 
-        if Character2Img.hidden == true {
-            Character2Img.hidden = false
-        } else if Character1Img.hidden == true {
-            Character1Img.hidden = false
-        }
-        
     }
     
     func loadNewGame () {
