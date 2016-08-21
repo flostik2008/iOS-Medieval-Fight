@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        
+        
        loadNewGame()
         
         let attackPath = NSBundle.mainBundle().pathForResource("Attack", ofType: "wav")
@@ -56,15 +58,18 @@ class ViewController: UIViewController {
         } catch let errDeathSound as NSError {
             print(errDeathSound.debugDescription)
         }
-//        
-//        let loop3Path = NSBundle.mainBundle().pathForResource("loop3", ofType: "wav")
-//        let loop3SoundURL = NSURL(fileURLWithPath: loop3Path!)
-//        do {
-//            try introSound = AVAudioPlayer(contentsOfURL: loop3SoundURL)
-//        } catch let errLoopSound as NSError {
-//            print(errLoopSound.debugDescription)
-//        }
         
+        let loop3Path = NSBundle.mainBundle().pathForResource("loop3", ofType: "wav")
+        let loop3SoundURL = NSURL(fileURLWithPath: loop3Path!)
+        do {
+            try introSound = AVAudioPlayer(contentsOfURL: loop3SoundURL)
+        } catch let errLoopSound as NSError {
+            print(errLoopSound.debugDescription)
+        }
+        
+        introSound.numberOfLoops = -1
+        introSound.prepareToPlay()
+        introSound.play()
         
     }
 
@@ -193,7 +198,7 @@ class ViewController: UIViewController {
     
     func loadNewGame () {
         
-//        introSound.play()
+      
         
         generateBothCharacters()
         
