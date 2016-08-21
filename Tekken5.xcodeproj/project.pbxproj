@@ -17,6 +17,9 @@
 		87EFDE961D6510F900749050 /* 8-Bit Madness.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDE951D6510F900749050 /* 8-Bit Madness.ttf */; };
 		87EFDE981D651BE000749050 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDE971D651BE000749050 /* Character.swift */; };
 		87EFDEA01D66574D00749050 /* Logic Steps.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDE9F1D66574D00749050 /* Logic Steps.rtf */; };
+		87EFDEA41D6A507D00749050 /* Attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEA11D6A507D00749050 /* Attack.wav */; };
+		87EFDEA51D6A507D00749050 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEA21D6A507D00749050 /* death.wav */; };
+		87EFDEA61D6A507D00749050 /* loop3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEA31D6A507D00749050 /* loop3.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		87EFDE951D6510F900749050 /* 8-Bit Madness.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-Bit Madness.ttf"; sourceTree = "<group>"; };
 		87EFDE971D651BE000749050 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		87EFDE9F1D66574D00749050 /* Logic Steps.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Logic Steps.rtf"; sourceTree = "<group>"; };
+		87EFDEA11D6A507D00749050 /* Attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Attack.wav; sourceTree = "<group>"; };
+		87EFDEA21D6A507D00749050 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		87EFDEA31D6A507D00749050 /* loop3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loop3.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				87EFDE6B1D6505DB00749050 /* Main.storyboard */,
 				87EFDE6E1D6505DB00749050 /* Assets.xcassets */,
 				87EFDE701D6505DB00749050 /* LaunchScreen.storyboard */,
+				87EFDEA11D6A507D00749050 /* Attack.wav */,
+				87EFDEA21D6A507D00749050 /* death.wav */,
+				87EFDEA31D6A507D00749050 /* loop3.wav */,
 				87EFDE951D6510F900749050 /* 8-Bit Madness.ttf */,
 				87EFDE731D6505DB00749050 /* Info.plist */,
 			);
@@ -238,10 +247,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EFDEA41D6A507D00749050 /* Attack.wav in Resources */,
 				87EFDEA01D66574D00749050 /* Logic Steps.rtf in Resources */,
+				87EFDEA61D6A507D00749050 /* loop3.wav in Resources */,
 				87EFDE961D6510F900749050 /* 8-Bit Madness.ttf in Resources */,
 				87EFDE721D6505DB00749050 /* LaunchScreen.storyboard in Resources */,
 				87EFDE6F1D6505DB00749050 /* Assets.xcassets in Resources */,
+				87EFDEA51D6A507D00749050 /* death.wav in Resources */,
 				87EFDE6D1D6505DB00749050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,10 +31,40 @@ class ViewController: UIViewController {
     var leftCharacter: Character!
     var rightCharacter: Character!
     
+    var attackSound: AVAudioPlayer!
+    var deathSound: AVAudioPlayer!
+    var introSound: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
        loadNewGame()
+        
+        let attackPath = NSBundle.mainBundle().pathForResource("Attack", ofType: "wav")
+        let attackSoundURL = NSURL(fileURLWithPath: attackPath!)
+        do {
+            try attackSound = AVAudioPlayer(contentsOfURL: attackSoundURL)
+        } catch let errAttackSound as NSError {
+            print(errAttackSound.debugDescription)
+        }
+        
+        
+        let deathPath = NSBundle.mainBundle().pathForResource("death", ofType: "wav")
+        let deathSoundURL = NSURL(fileURLWithPath: deathPath!)
+        do {
+            try deathSound = AVAudioPlayer(contentsOfURL: deathSoundURL)
+        } catch let errDeathSound as NSError {
+            print(errDeathSound.debugDescription)
+        }
+//        
+//        let loop3Path = NSBundle.mainBundle().pathForResource("loop3", ofType: "wav")
+//        let loop3SoundURL = NSURL(fileURLWithPath: loop3Path!)
+//        do {
+//            try introSound = AVAudioPlayer(contentsOfURL: loop3SoundURL)
+//        } catch let errLoopSound as NSError {
+//            print(errLoopSound.debugDescription)
+//        }
+        
         
     }
 
@@ -80,6 +110,8 @@ class ViewController: UIViewController {
     
     @IBAction func attack1Tapped(sender: AnyObject) {
 
+        attackSound.play()
+        
         if rightCharacter.attackHappened(leftCharacter.attackPower) {
             MainLbl.text = "\(leftCharacter.name) is attacking \(rightCharacter.name)!"
             AttackBtn2.enabled = false
@@ -93,6 +125,7 @@ class ViewController: UIViewController {
         if rightCharacter.hp > 0 {
         HPLbl2.text = "Hlth \(rightCharacter.hp)\nAttck \(rightCharacter.attackPower)"
     } else if rightCharacter.hp <= 0 {
+            deathSound.play()
     HPLbl2.text = "Dead"
             Character2Img.hidden = true
             GameOverLbl.hidden = false
@@ -106,6 +139,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func attack2Tapped(sender: AnyObject) {
+        
+        attackSound.play()
     
         if leftCharacter.attackHappened(rightCharacter.attackPower) {
             MainLbl.text = "\(rightCharacter.name) is attacking \(leftCharacter.name)!"
@@ -118,6 +153,7 @@ class ViewController: UIViewController {
         if leftCharacter.hp > 0 {
         HPLbl1.text = "Hlth \(leftCharacter.hp)\nAttck \(leftCharacter.attackPower)"
         } else if leftCharacter.hp <= 0 {
+            deathSound.play()
             HPLbl1.text = "Dead"
             Character1Img.hidden = true
             GameOverLbl.hidden = false
@@ -156,6 +192,8 @@ class ViewController: UIViewController {
     }
     
     func loadNewGame () {
+        
+//        introSound.play()
         
         generateBothCharacters()
         
