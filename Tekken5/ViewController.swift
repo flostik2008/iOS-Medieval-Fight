@@ -24,22 +24,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var AttackLbl2: UILabel!
     
     
+    @IBOutlet weak var GameOverLbl: UILabel!
+    @IBOutlet weak var RestartBtnLbl: UIButton!
+    
     var leftCharacter: Character!
     var rightCharacter: Character!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        generateBothCharacters()
-        
-        MainLbl.text = "\(leftCharacter.name) is going to fight \(rightCharacter.name)"
-        
-        HPLbl1.text = "Hlth \(leftCharacter.hp)\nAttck \(leftCharacter.attackPower)"
-        
-        HPLbl2.text = "Hlth \(rightCharacter.hp)\nAttck \(rightCharacter.attackPower)"
-        
-        print(" left character attack power = \(leftCharacter.attackPower) and right one = \(rightCharacter.attackPower)")
-
+       loadNewGame()
         
     }
 
@@ -54,9 +48,7 @@ class ViewController: UIViewController {
         arrayOfAllCharacters += [character1, character2, character3, character4, character5]
        
         
-        // generate a such a character so it will be different from the other one. 
- 
-        
+        // generate a such a character so it will be different from the other one.
         // create an array of 2 different characters. Then we will access that array and give them as indexes to "arrayOfAllCharacters"
         
         var arrayOf2Digits = [Int] ()
@@ -102,15 +94,13 @@ class ViewController: UIViewController {
     } else if rightCharacter.hp <= 0 {
     HPLbl2.text = "Dead"
             Character2Img.hidden = true
+            GameOverLbl.hidden = false
+            RestartBtnLbl.hidden = false
     }
-    
     
         if !rightCharacter.isAlive {
             MainLbl.text = ""
             MainLbl.text = "\(rightCharacter.name) died. \(leftCharacter.name) won."        }
-        
-        
-    
     }
     
     
@@ -129,7 +119,8 @@ class ViewController: UIViewController {
         } else if leftCharacter.hp <= 0 {
             HPLbl1.text = "Dead"
             Character1Img.hidden = true
-            
+            GameOverLbl.hidden = false
+            RestartBtnLbl.hidden = false
         }
         
         
@@ -146,7 +137,43 @@ class ViewController: UIViewController {
     func enable1Button () {
         AttackBtn1.enabled = true
     }
+    
+    
+    @IBAction func RestartBtn(sender: AnyObject) {
+     // what happens when the restart button gets pressed.
+        
+        // new instances of "character" class get initialized. 
+        
+        loadNewGame()
+        
+        // hide gameOver lbl and restartBtn + unhide character img.
+        GameOverLbl.hidden = true
+        RestartBtnLbl.hidden = true
+
+        if Character2Img.hidden == true {
+            Character2Img.hidden = false
+        } else if Character1Img.hidden == true {
+            Character1Img.hidden = false
+        }
+        
+    }
+    
+    func loadNewGame () {
+        
+        generateBothCharacters()
+        
+        MainLbl.text = "\(leftCharacter.name) is going to fight \(rightCharacter.name)"
+        
+        HPLbl1.text = "Hlth \(leftCharacter.hp)\nAttck \(leftCharacter.attackPower)"
+        
+        HPLbl2.text = "Hlth \(rightCharacter.hp)\nAttck \(rightCharacter.attackPower)"
+        
+        print(" left character attack power = \(leftCharacter.attackPower) and right one = \(rightCharacter.attackPower)")
+    
+    }
+    
 }
+
 
 
 

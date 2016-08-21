@@ -12,6 +12,8 @@
             <string>8-Bit-Madness</string>
             <string>8-Bit-Madness</string>
             <string>8-Bit-Madness</string>
+            <string>8-Bit-Madness</string>
+            <string>8-Bit-Madness</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -131,6 +133,27 @@
                                 <color key="textColor" red="0.98862892670000002" green="0.98862892670000002" blue="0.98862892670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iLj-nO-0rT">
+                                <rect key="frame" x="139" y="98" width="0.0" height="0.0"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-6Z-nft">
+                                        <rect key="frame" x="-399" y="-280" width="323" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="8-Bit-Madness" family="Eight-Bit Madness" pointSize="77"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuS-mQ-edi">
+                                        <rect key="frame" x="-300" y="-280" width="125" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="8-Bit-Madness" family="Eight-Bit Madness" pointSize="39"/>
+                                        <state key="normal" title="Restart">
+                                            <color key="titleColor" red="0.063532648353248081" green="0.08745670356816021" blue="0.54679319371727741" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RestartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4c-8j-aTd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,7 +176,9 @@
                             <constraint firstItem="YDw-3f-EUG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="95" id="Lb0-8b-Qvd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QZu-F6-P4s" secondAttribute="bottom" constant="14" id="MDv-1R-ifJ"/>
                             <constraint firstItem="FZL-2M-h8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NFg-Vk-NOT"/>
+                            <constraint firstItem="iLj-nO-0rT" firstAttribute="centerY" secondItem="FZL-2M-h8O" secondAttribute="centerY" constant="-20" id="NxR-Dg-jfa"/>
                             <constraint firstItem="AQD-KA-xeT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="OKF-3B-xH1"/>
+                            <constraint firstItem="iLj-nO-0rT" firstAttribute="centerX" secondItem="FZL-2M-h8O" secondAttribute="centerX" id="PGa-wh-Hhk"/>
                             <constraint firstItem="BSP-fa-oAu" firstAttribute="centerY" secondItem="YDw-3f-EUG" secondAttribute="centerY" id="PdP-IQ-fcP"/>
                             <constraint firstItem="AQD-KA-xeT" firstAttribute="leading" secondItem="aeB-cM-89M" secondAttribute="trailing" constant="347" id="QT6-tJ-PpF"/>
                             <constraint firstItem="aeB-cM-89M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TfG-ty-uP1"/>
@@ -206,9 +231,11 @@
                         <outlet property="AttackLbl2" destination="fsJ-2L-cNh" id="BPp-qI-th1"/>
                         <outlet property="Character1Img" destination="g9Z-9D-Nqg" id="8E6-ry-w5Y"/>
                         <outlet property="Character2Img" destination="UOx-7u-qvX" id="Oz8-V8-XOu"/>
+                        <outlet property="GameOverLbl" destination="ejM-6Z-nft" id="Tb9-Dw-0Fz"/>
                         <outlet property="HPLbl1" destination="8n6-hh-KXx" id="er0-hn-AOZ"/>
                         <outlet property="HPLbl2" destination="QZu-F6-P4s" id="Wt6-po-TiJ"/>
                         <outlet property="MainLbl" destination="BSP-fa-oAu" id="kmM-bq-EPd"/>
+                        <outlet property="RestartBtnLbl" destination="LuS-mQ-edi" id="AKE-rc-z7j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
